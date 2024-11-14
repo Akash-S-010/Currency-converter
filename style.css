@@ -1,5 +1,92 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(111.4deg, rgb(238, 161, 113) 1%, rgba(246, 215, 148, 1) 58%);
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: .5rem;
+    width: 23rem;
+}
+
+.container h1 {
+    text-align: center;
+    color: rgb(54, 54, 54);
+}
+
+form {
+    margin: 2rem 0 0;
+}
+
+form select,
+button,
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+form input{
+    margin-top:0.3rem;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: .70rem 0 .70rem 0.6rem;
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.select-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    border-radius: 10px;
+    border: 2px solid lightgrey;
+}
+.select-container img{
+    max-width: 2rem;
+    margin-left: 0.3rem;
+}
+.select-container select{
+    font-size: 1rem;
+}
+.dropdown i{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+.dropdown p{
+    margin-bottom: 0.3rem;
+}
+.message{
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.exchange-btn{
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: rgb(93, 92, 92);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.exchange-btn:active{
+    background-color: rgb(29, 28, 28);
 }
