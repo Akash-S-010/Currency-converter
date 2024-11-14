@@ -16,6 +16,7 @@ body {
 }
 
 .container {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     background-color: white;
     padding: 2rem;
     border-radius: .5rem;
@@ -75,7 +76,7 @@ form input{
 }
 .message{
     margin: 2rem 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 .exchange-btn{
@@ -90,3 +91,18 @@ form input{
 .exchange-btn:active{
     background-color: rgb(29, 28, 28);
 }
+.loader {
+    display: none;
+    border: 10px solid #f3f3f3;
+    border-top: 8px solid #fc5e03;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
